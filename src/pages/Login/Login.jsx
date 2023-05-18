@@ -5,6 +5,7 @@ import { AuthContext } from '../../providers/AuthProvider';
 import { FcGoogle } from "react-icons/fc";
 import LoginForm from '../../Components/LoginForm/LoginForm';
 import loginBG from '../../assets/background-images/loginBG.jpg'
+import useTitle from '../../hooks/useTitle';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -68,6 +69,8 @@ const Login = () => {
         }
 
     }
+
+    useTitle('Login');
 
     const handlePassowrd = e => {
         const passwordInput = e.target.value;
