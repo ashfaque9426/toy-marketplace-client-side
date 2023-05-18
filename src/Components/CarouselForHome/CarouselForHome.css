@@ -1,0 +1,16 @@
+.myCarouselSlider p {
+    background-color: rgba(0, 0, 0, 0.324);
+    letter-spacing: 1px;
+    padding-block: 5px;
+}
+
+@media screen and (max-width: 576px) {
+    .myCarouselSlider {
+        height: 350px;
+    }
+
+    .myCarouselSlider img {
+        height: 350px !important;
+        object-fit: cover;
+    }
+}

@@ -12,6 +12,7 @@ import AddAToy from '../pages/AddAToy/AddAToy';
 import Blogs from '../pages/Blogs/Blogs';
 import Login from '../pages/Login/Login';
 import Register from '../pages/Register/Register';
+import PrivateRoute from './PrivateRoute';
 
 const router = createBrowserRouter([
     {
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'add-a-toy',
-                element: <AddAToy />
+                element: <PrivateRoute><AddAToy /></PrivateRoute>
             },
             {
                 path: 'blogs',
