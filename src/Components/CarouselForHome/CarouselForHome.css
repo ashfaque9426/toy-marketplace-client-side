@@ -1,5 +1,22 @@
+.myCarouselSlider {
+    background-color: black;
+}
+
+.myCarouselSlider span {
+    background-color: rgb(0, 0, 0);
+}
+
+.myCarouselSlider img {
+    opacity: 0.77;
+}
+
+.myCarouselSlider h3 {
+    letter-spacing: 1px;
+}
+
 .myCarouselSlider p {
-    background-color: rgba(0, 0, 0, 0.324);
+    background: rgba(0, 0, 0, 0.395);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.15) 100%);
     letter-spacing: 1px;
     padding-block: 5px;
 }
@@ -9,8 +26,17 @@
         height: 350px;
     }
 
+    .myCarouselSlider h3 {
+        font-size: 40px;
+    }
+
     .myCarouselSlider img {
-        height: 350px !important;
+        height: 350px;
         object-fit: cover;
+    }
+
+    .myCarouselSlider p {
+        background: rgba(0, 0, 0, 0.395);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.35) 100%);
     }
 }

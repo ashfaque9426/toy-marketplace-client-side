@@ -1,11 +1,17 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { AuthContext } from '../../../providers/AuthProvider';
 import userIcon from '../../../assets/icons/userIcon.png';
+import { AuthContext } from '../../../providers/AuthProvider';
 
 const NavBar = () => {
     const { user, logOut } = useContext(AuthContext);
+    console.log(user);
+    const handleSignOut = () => {
+        logOut()
+        .then(()=> console.log("logout successfull"))
+        .catch((error) => console.log(error.message))
+    }
     return (
         <nav style={{ background: "#e7e7e0"}} className="navbar navbar-expand-lg bg-body-tertiary border">
             <div className="container">
@@ -23,14 +29,16 @@ const NavBar = () => {
                         </li>
                         {
                             user !== null ? 
-                                <li className="nav-item">
-                                    <NavLink className="nav-link" to='/my-toys'>My Toys</NavLink>
-                                </li>
+                                <>
+                                    <li className="nav-item">
+                                        <NavLink className="nav-link" to='/my-toys'>My Toys</NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink className="nav-link" to='/add-a-toy'>Add A Toy</NavLink>
+                                    </li>
+                                </>
                                 : ""
                         }
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to='/add-a-toy'>Add A Toy</NavLink>
-                        </li>
                         <li className="nav-item">
                             <NavLink className="nav-link" to='/blogs'>Blog</NavLink>
                         </li>
@@ -40,12 +48,12 @@ const NavBar = () => {
                             user !== null ? user.photoURL !== null ? <section className='d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center'>
                                 <img title={user.displayName !== null ? user.displayName : ""} style={{ width: "50px", height: "50px", borderRadius: "50%" }} src={user.photoURL} alt="profile picture" />
 
-                                <button onClick={logOut} style={{ backgroundColor: "var(--secondary-background)" }} className='btn text-dark fw-bold'>Logout</button>
+                                <button onClick={handleSignOut} style={{ backgroundColor: "var(--secondary-background)" }} className='btn text-dark fw-bold'>Logout</button>
                             </section>
                                 : <section className='d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center'>
                                     <img title={user.displayName !== null ? user.displayName : ""} style={{ width: "50px", height: "50px", borderRadius: "50%" }} src={userIcon} alt="profile picture" />
 
-                                    <button onClick={logOut} style={{ backgroundColor: "var(--secondary-background)" }} className='btn text-dark fw-bold'>Logout</button>
+                                    <button onClick={handleSignOut} style={{ backgroundColor: "var(--secondary-background)" }} className='btn text-dark fw-bold'>Logout</button>
                                 </section>
 
                                 : <section className='d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center'>

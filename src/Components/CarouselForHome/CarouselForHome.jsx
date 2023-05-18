@@ -9,10 +9,9 @@ import actionFigureUpdated from '../../assets/sliderImages/actionFigureUpdated.j
 
 const CarouselForHome = () => {
     return (
-        <Carousel className='bg-dark myCarouselSlider' role='banner'>
+        <Carousel className='myCarouselSlider' role='banner'>
             <Carousel.Item>
                 <img
-                    style={{opacity: "0.7"}}
                     className="d-block w-100"
                     src={actionFigureTwo}
                     alt="First slide"
@@ -24,7 +23,6 @@ const CarouselForHome = () => {
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    style={{ opacity: "0.7" }}
                     className="d-block w-100"
                     src={actionFigureOne}
                     alt="Second slide"
@@ -37,7 +35,6 @@ const CarouselForHome = () => {
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    style={{ opacity: "0.7" }}
                     className="d-block w-100"
                     src={actionFigureUpdated}
                     alt="Third slide"
