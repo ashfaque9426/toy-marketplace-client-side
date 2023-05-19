@@ -39,7 +39,8 @@ const router = createBrowserRouter([
             },
             {
                 path: 'singleToyDetails/:id',
-                element: <PrivateRoute><SingleToyDetail /></PrivateRoute>
+                element: <PrivateRoute><SingleToyDetail /></PrivateRoute>,
+                loader: ({ params }) => fetch(`https://b7a11-toy-marketplace-server-side-ashfaque9426-hko3p6w1c.vercel.app/singleToyDetail/${params.id}`)
             },
             {
                 path: 'blogs',

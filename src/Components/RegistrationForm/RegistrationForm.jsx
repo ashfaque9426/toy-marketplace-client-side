@@ -39,7 +39,7 @@ const RegistrationForm = ({ handleRegistration, handleEmail, handlePassword, suc
                 <Form.Text className="text-muted">
                     <p className='mt-4'>Already Have an account? <Link to='/login'>Please Login</Link></p>
                 </Form.Text>
-                <Button disabled={disableBtn} style={{ backgroundColor: '#bfc0c3' }} className='text-dark fw-semibold border-0 mb-3' type="submit">
+                <Button disabled={disableBtn} className='text-dark fw-semibold border-0 mb-3 bg-dark' type="submit">
                     Register
                 </Button>
 

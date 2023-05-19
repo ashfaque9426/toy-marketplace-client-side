@@ -3,6 +3,7 @@ import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import userIcon from '../../../assets/icons/userIcon.png';
 import { AuthContext } from '../../../providers/AuthProvider';
+import './Navbar.css'
 
 const NavBar = () => {
     const { user, logOut } = useContext(AuthContext);
@@ -45,22 +46,22 @@ const NavBar = () => {
                     </ul>
                     <span>
                         {
-                            user !== null ? user.photoURL !== null ? <section className='d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center'>
+                            user !== null ? user.photoURL !== null ? <section className='d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center user'>
                                 <img title={user.displayName !== null ? user.displayName : ""} style={{ width: "50px", height: "50px", borderRadius: "50%" }} src={user.photoURL} alt="profile picture" />
 
-                                <button onClick={handleSignOut} style={{ backgroundColor: "var(--secondary-background)" }} className='btn text-dark fw-bold'>Logout</button>
+                                <button onClick={handleSignOut} className='btn text-dark fw-bold'>Logout</button>
                             </section>
-                                : <section className='d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center'>
+                                : <section className='d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center user'>
                                     <img title={user.displayName !== null ? user.displayName : ""} style={{ width: "50px", height: "50px", borderRadius: "50%" }} src={userIcon} alt="profile picture" />
 
                                     <button onClick={handleSignOut} style={{ backgroundColor: "var(--secondary-background)" }} className='btn text-dark fw-bold'>Logout</button>
                                 </section>
 
                                 : <section className='d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center'>
-                                    <Link to='/login'><button style={{ backgroundColor: "var(--secondary-background)" }} className='btn text-dark fw-bold'>Login</button></Link>
+                                    <Link to='/login'><button className='btn text-dark fw-bold'>Login</button></Link>
                                 </section>
                         }
-                    </span>
+                    </span> 
                 </div>
             </div>
         </nav>

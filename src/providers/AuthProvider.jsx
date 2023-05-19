@@ -69,8 +69,6 @@ const AuthProvider = ({children}) => {
                 })
                     .then(res => res.json())
                     .then(data => {
-                        console.log('jwt response', data)
-                        // local storage is second best place to store the access token
                         localStorage.setItem('figurama-secret-token', data.token);
                     })
             }
