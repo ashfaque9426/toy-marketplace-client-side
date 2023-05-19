@@ -1,0 +1,5 @@
+@media screen and (max-width: 576px) {
+    .addAToyMainContainer {
+        height: calc(100vh + 75vh) !important;
+    }
+}

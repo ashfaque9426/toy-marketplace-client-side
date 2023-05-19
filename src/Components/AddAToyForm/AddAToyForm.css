@@ -1,0 +1,10 @@
+@media screen and (max-width: 576px) {
+    .addAToyForm {
+        padding-inline: 20px !important;
+        margin-inline: 10px !important;
+    }
+    .addAToyForm section div {
+        width: 100% !important;
+        margin-bottom: 10 !important;
+    }
+}

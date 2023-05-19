@@ -3,8 +3,10 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import { useLoaderData } from 'react-router-dom';
 import './SingleToyDetails.css'
+import useTitle from '../../hooks/useTitle';
 
 const SingleToyDetail = () => {
+    useTitle("Single Toy");
     const singleActionFigure = useLoaderData();
     const { imgUrl, toyName, sellerName, sellerEmail, price, availableQuantity, rating, detailDescription } = singleActionFigure;
     return (
