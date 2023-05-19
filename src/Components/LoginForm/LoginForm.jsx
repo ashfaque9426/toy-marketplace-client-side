@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const LoginForm = ({ email, error, success, emailError, password, passwordError, disableBtn, handleSignin, handleEmail, handlePassowrd }) => {
     return (
         <div>
-            <Form onSubmit={handleSignin} style={{ background: "#e7e7e0", maxWidth: "720px", minWidth: "400px" }} className='px-4 py-5 border rounded-3 my-5'>
+            <Form onSubmit={handleSignin} style={{ background: "#e7e7e0", maxWidth: "720px", minWidth: "350px" }} className='px-4 py-5 border rounded-3 my-5'>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address<span className='fs-3'>*</span></Form.Label>
                     <Form.Control className='mb-2' type="email" value={email} onChange={handleEmail} name='email' placeholder="Enter email" />

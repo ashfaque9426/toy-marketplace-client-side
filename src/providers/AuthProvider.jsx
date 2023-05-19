@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { createContext, useEffect, useState } from 'react';
-import { getAuth, onAuthStateChanged, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { getAuth, onAuthStateChanged, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import app from '../firebase/firebase.config';
 
 export const AuthContext = createContext();
@@ -21,6 +21,14 @@ const AuthProvider = ({children}) => {
         return signInWithEmailAndPassword(auth, email, password)
     }
 
+    const updataUserProfile = (user, name, url) => {
+        setLoading(true);
+        return updateProfile(user, {
+            displayName: name,
+            photoURL: url
+        });
+    }
+
     const googleSignIn = () => {
         setLoading(true);
         return signInWithPopup(auth, googleProvider)
@@ -36,6 +44,7 @@ const AuthProvider = ({children}) => {
         loading,
         createUser,
         signIn,
+        updataUserProfile,
         googleSignIn,
         logOut
     };
