@@ -1,0 +1,8 @@
+@media screen and (max-width: 576px) {
+    .tabsContainerCustomClass {
+        padding-inline: 5px !important;
+    }
+    .myTabs {
+        width: 100% !important;
+    }
+}

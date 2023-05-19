@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './Components/Shared/NavBar/NavBar';
 import Footer from './Components/Shared/Footer/Footer';
 import CarouselForHome from './Components/CarouselForHome/CarouselForHome';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   const location = useLocation();
@@ -17,6 +18,7 @@ function App() {
         }
       </header>
       <Outlet />
+      <ToastContainer />
       <Footer />
     </>
   )
