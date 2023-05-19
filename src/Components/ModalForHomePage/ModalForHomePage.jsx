@@ -35,7 +35,7 @@ const ModalForHomePage = (props) => {
                 </section>
             </Modal.Body>
             <Modal.Footer>
-                <Link to={`/singleToyDetails/${_id}`}><Button className='bg-dark border-0'>Order Confirmation</Button></Link>
+                <Link to={`/singleToyDetails/${_id}`}><Button className='bg-dark border-0'>Confirmation Page</Button></Link>
                 <Button className='bg-dark border-0' onClick={props.onHide}>Close</Button>
             </Modal.Footer>
         </Modal>

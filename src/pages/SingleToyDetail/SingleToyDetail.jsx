@@ -23,7 +23,7 @@ const SingleToyDetail = () => {
                     <p className='fs-5 fw-semibold'><span className="fw-bold">Price:</span> {price}</p>
                     <p className='fs-5 fw-semibold'><span className="fw-bold">Available:</span> {availableQuantity} Figures</p>
                     <p className='fs-5 fw-semibold'><span className="fw-bold">Ratings:</span> {rating}</p>
-                    <p className='w-50 mx-auto singleDetailDesc'><span className='fw-bold'>Detail Description:</span> {detailDescription}</p>
+                    <p className='w-50 mx-auto fw-semibold singleDetailDesc'><span className='fw-bold'>Detail Description:</span> {detailDescription}</p>
                     <Button className='bg-dark border-0'>Order Now</Button>
                 </section>
                 

@@ -31,7 +31,7 @@ const LoginForm = ({ email, error, success, emailError, password, passwordError,
                 <Form.Text className="text-muted">
                     <p className='mt-4'>New to this website? <Link to='/registration'>Register Here</Link></p>
                 </Form.Text>
-                <Button disabled={disableBtn} className='text-dark fw-semibold border-0 mb-3 bg-dark' type="submit">
+                <Button disabled={disableBtn} className='fw-semibold border-0 mb-3 bg-dark' type="submit">
                     Login
                 </Button>
 
