@@ -3,9 +3,14 @@ import React from 'react';
 import useTitle from '../../hooks/useTitle';
 import AddAToyForm from '../../Components/AddAToyForm/AddAToyForm';
 import './AddAToy.css'
+import 'react-toastify/dist/ReactToastify.css'
+import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
 const AddAToy = () => {
     useTitle("Add A Toy");
+    const navigate = useNavigate();
+
     const handleAddAToy = e => {
         e.preventDefault();
         const form = e.target;
@@ -40,12 +45,18 @@ const AddAToy = () => {
             body: JSON.stringify(infoObj)
         })
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => {
+            if (data.acknowledged) {
+                form.reset();
+                toast("Item Successfully Added");
+                navigate('/my-toys', {replace: true});
+            }
+        })
     }
 
     return (
         <main className='addAToyMainContainer' role='main'>
-            <h2 className='text-center my-5'>Add A Toy Section</h2>
+            <h2 className='text-center my-5'>Add Your Toy</h2>
             <section>
                 <AddAToyForm handleAddAToy={handleAddAToy} />
             </section>

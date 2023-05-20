@@ -1,0 +1,16 @@
+@media screen and (max-width: 576px) {
+    .qaContainer {
+        height: calc(100vh + 33vh) !important;
+    }
+
+    .qaSection {
+        width: 90% !important;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .qaSection {
+        max-width: 800px !important;
+    }
+}

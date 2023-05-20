@@ -6,6 +6,8 @@ import { FcGoogle } from "react-icons/fc";
 import LoginForm from '../../Components/LoginForm/LoginForm';
 import loginBG from '../../assets/background-images/loginBG.jpg'
 import useTitle from '../../hooks/useTitle';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -36,6 +38,7 @@ const Login = () => {
                 setPassword("");
                 setSuccess("login successfull");
                 setDisableBtn(true);
+                toast("Login Successfull");
                 navigate(from, { replace: true });
             })
             .catch(error => {
@@ -101,6 +104,7 @@ const Login = () => {
             .then(result => {
                 const loggedUser = result.user;
                 console.log(loggedUser);
+                toast("Google Signin Successfull.");
                 navigate(from, { replace: true });
             })
             .catch(error => {

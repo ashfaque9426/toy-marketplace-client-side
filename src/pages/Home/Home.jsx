@@ -62,7 +62,7 @@ const Home = () => {
                 </Tabs>
             </section>
             <section className='text-center'>
-                <h2 className='pt-5 mb-4'>Figure Gallery</h2>
+                <h2 className='pt-5 mb-5'>Figure Gallery</h2>
                 <HomeGallery />
             </section>
         </main>

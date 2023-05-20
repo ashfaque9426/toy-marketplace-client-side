@@ -3,6 +3,8 @@ import React, { useContext, useState } from 'react';
 import useTitle from '../../hooks/useTitle';
 import { AuthContext } from '../../providers/AuthProvider';
 import RegistrationForm from '../../Components/RegistrationForm/RegistrationForm';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
     useTitle('Register');
@@ -40,6 +42,7 @@ const Register = () => {
                 setPassword("");
                 setSuccess("Registration Successfull");
                 logOut();
+                toast("Successfully Registered, Please Login.");
                 setTimeout(() => {
                     setRedirection(true)
                 }, 1000)
