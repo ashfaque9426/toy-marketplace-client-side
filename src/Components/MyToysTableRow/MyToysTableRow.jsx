@@ -7,7 +7,7 @@ const MyToysTableRow = ({ index, toy, handleUpdate, handleDelete }) => {
     const [modalShow, setModalShow] = React.useState(false);
     const { _id, imgUrl, sellerName, sellerEmail, toyName, subCategory, detailDescription, price, availableQuantity } = toy;
     return (
-        <tr>
+        <tr style={{ verticalAlign: "middle" }}>
             <td>{index + 1}</td>
             <td><img style={{height: "75px", width: "100%", objectFit: "cover"}} src={imgUrl} alt="Figure Image" /></td>
             <td>{sellerName}</td>

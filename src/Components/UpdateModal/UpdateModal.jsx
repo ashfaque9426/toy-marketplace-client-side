@@ -13,7 +13,7 @@ const UpdateModal = (props) => {
             centered
         >
             <Modal.Header closeButton>
-                <Modal.Title id="contained-modal-title-vcenter">
+                <Modal.Title id="contained-modal-title-vcenter" className='fw-bold'>
                     Update Your Informations
                 </Modal.Title>
             </Modal.Header>
@@ -23,17 +23,17 @@ const UpdateModal = (props) => {
                     <fieldset className='d-flex flex-column gap-3 border py-4 px-3'>
                         <div className='d-flex gap-2'>
                             <fieldset className='w-100'>
-                                <label className='d-block fw-bold' htmlFor="price">Price</label>
+                                <label className='d-block fw-bold mb-2' htmlFor="price">Price</label>
                                 <input className='w-100' type="text" defaultValue={price} name="price" id="price" />
                             </fieldset>
                             <fieldset className='w-100'>
-                                <label className='d-block fw-bold' htmlFor="availableQuantity">Quantity</label>
+                                <label className='d-block fw-bold mb-2' htmlFor="availableQuantity">Quantity</label>
                                 <input className='w-100' type="text" defaultValue={availableQuantity} name="availableQuantity" id="availableQuantity" />
                             </fieldset>
                         </div>
-                        <fieldset>
-                            <label className='d-block fw-bold' htmlFor="detailDescription">Description</label>
-                            <input type="text" defaultValue={detailDescription} name="detailDescription" id="detailDescription" />
+                        <fieldset className='w-100'>
+                            <label className='d-block fw-bold mb-1' htmlFor="detailDescription">Description</label>
+                            <textarea className='w-100' type="text" defaultValue={detailDescription} name="detailDescription" id="detailDescription" />
                         </fieldset>
                     </fieldset>
                 </form>
