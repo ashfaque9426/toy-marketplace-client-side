@@ -7,7 +7,7 @@ import './Navbar.css'
 
 const NavBar = () => {
     const { user, logOut } = useContext(AuthContext);
-    console.log(user);
+    
     const handleSignOut = () => {
         logOut()
         .then(()=> console.log("logout successfull"))

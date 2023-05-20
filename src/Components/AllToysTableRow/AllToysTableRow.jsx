@@ -11,7 +11,7 @@ const AllToysTableRow = ({index, toy}) => {
             <td>{sellerName}</td>
             <td>{toyName}</td>
             <td>{subCategory}</td>
-            <td>{price}</td>
+            <td>${price}</td>
             <td className='text-center'>{availableQuantity}</td>
             <td><Link to={`/singleToyDetails/${_id}`}><Button className='bg-dark border-0'>View Details</Button></Link></td>
         </tr>

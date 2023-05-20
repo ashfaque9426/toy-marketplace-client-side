@@ -34,7 +34,7 @@ const AllToys = () => {
                 <Button onClick={searchHandler} className='bg-dark border-0 ms-1'>Search</Button>
             </section>
             <h2 className='text-center mt-5 mb-4'>Browse Figures</h2>
-            <Table responsive="sm">
+            <Table striped bordered hover responsive="sm">
                 <thead>
                     <tr>
                         <th>#</th>
@@ -42,7 +42,7 @@ const AllToys = () => {
                         <th>Toy Name</th>
                         <th>Sub-category</th>
                         <th>Price</th>
-                        <th>Available Quantity</th>
+                        <th className='text-center'>Available Quantity</th>
                         <th>Details</th>
                     </tr>
                 </thead>
