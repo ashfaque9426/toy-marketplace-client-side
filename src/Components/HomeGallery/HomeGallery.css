@@ -1,0 +1,32 @@
+.myGallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid goldenrod;
+}
+
+@media screen and (max-width: 576px) {
+    .myGallery {
+        width: 100% !important;
+    }
+
+    .myGallery div {
+        margin-bottom: 10px;
+    }
+
+    .myGallery .gallerySecondPart {
+        margin-top: -19px !important;
+    }
+
+    .firstImgDiv {
+        margin-bottom: 19px !important;
+    }
+
+    .myGallery img {
+        border: 0;
+    }
+
+    .secondLastImgDiv, .lastImgDiv {
+        margin-bottom: 19px !important;
+    }
+}

@@ -17,7 +17,7 @@ const CarouselForHome = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>Figurama</h3>
+                    <h3 className='display-1'>Figurama</h3>
                     <p className='fw-semibold'>The Ultimate Gaming Action Figure Hub For Gamming Comutity</p>
                 </Carousel.Caption>
             </Carousel.Item>

@@ -5,6 +5,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import FigureCardForHome from '../../Components/FigureCardForHome/FigureCardForHome';
 import './Home.css'
+import HomeGallery from '../../Components/HomeGallery/HomeGallery';
 
 const Home = () => {
     useTitle("Home");
@@ -59,6 +60,10 @@ const Home = () => {
                         </section>
                     </TabPanel>
                 </Tabs>
+            </section>
+            <section className='text-center'>
+                <h2 className='pt-5 mb-4'>Figure Gallery</h2>
+                <HomeGallery />
             </section>
         </main>
     );
