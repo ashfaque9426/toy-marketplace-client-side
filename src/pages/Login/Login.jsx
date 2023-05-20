@@ -113,7 +113,7 @@ const Login = () => {
     }
 
     return (
-        <main role='main' style={{ minHeight: "calc(100vh - 20vh)", backgroundImage: `url(${loginBG})`, backgroundSize: "cover", backgroundPosition: "center" }}>
+        <main role='main' style={{ backgroundImage: `url(${loginBG})`, backgroundSize: "cover", backgroundPosition: "center" }} className='loginMainContaier' >
             <h2 className='text-center pt-5 text-light'>Please Login</h2>
             <section className='d-flex justify-content-center align-items-center'>
                 <LoginForm email={email} password={password} error={error} success={success} emailError={emailError} passwordError={passwordError} disableBtn={disableBtn} handleSignin={handleSignin} handleEmail={handleEmail} handlePassowrd={handlePassowrd} />

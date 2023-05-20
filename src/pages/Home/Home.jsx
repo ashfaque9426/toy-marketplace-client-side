@@ -27,7 +27,7 @@ const Home = () => {
     }, []);
 
     return (
-        <main role='main'>
+        <main className='homeMainContainer' role='main'>
             <h2 className='text-center mt-5 mb-3'>This Is Home</h2>
             <section>
                 <h2 className='fs-3 fw-bold text-center mt-5 mb-3'>Suggested Categories</h2>
@@ -61,7 +61,7 @@ const Home = () => {
                     </TabPanel>
                 </Tabs>
             </section>
-            <section style={{marginBottom: "1000px"}} className='text-center'>
+            <section className='text-center mb-5'>
                 <h2 className='pt-5 mb-5'>Figure Gallery</h2>
                 <HomeGallery />
             </section>

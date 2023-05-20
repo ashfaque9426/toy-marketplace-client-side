@@ -4,6 +4,7 @@ import useTitle from '../../hooks/useTitle';
 import Table from 'react-bootstrap/Table';
 import AllToysTableRow from '../../Components/AllToysTableRow/AllToysTableRow';
 import { Button } from 'react-bootstrap';
+import './AllToys.css'
 
 const AllToys = () => {
     useTitle("All Toys");
@@ -27,7 +28,7 @@ const AllToys = () => {
     }, [])
 
     return (
-        <main role='main'>
+        <main className='allToysMainContainer' role='main'>
             <h2 className='text-center mt-5 mb-4'>Search Here</h2>
             <section className='d-flex justify-content-center align-items-center mb-5'>
                 <input className='ps-2 pb-1 pt-1 rounded-2' placeholder='Figure Name' type="text"/>

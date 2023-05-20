@@ -1,0 +1,5 @@
+@media screen and (max-width: 576px) {
+    .allToysMainContainer {
+        height: calc(100vh + 355vh) !important;
+    }
+}

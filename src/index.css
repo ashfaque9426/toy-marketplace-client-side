@@ -1,3 +1,4 @@
+/* AOS Animation on Figure Gallery section fading left and right is disabled instead smooth transition from opacity zero to one enabled but if the browser switch between from desktop to mobile like I-Phone SE or other it takes several seconds to line up with the viewport correctly. But it is only when viewport switched. But if the site loaded on the phone it wont happen.*/
 @media screen and (max-width: 768px) {
     [data-aos] {
         pointer-events: auto !important;

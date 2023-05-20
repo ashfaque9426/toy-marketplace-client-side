@@ -1,4 +1,7 @@
 @media screen and (max-width: 576px) {
+    .homeMainContainer {
+        height: calc(100vh + 533vh) !important;
+    }
     .tabsContainerCustomClass {
         padding-inline: 5px !important;
     }
