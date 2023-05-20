@@ -1,10 +1,12 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
+import React, { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import './AddAToyForm.css'
+import { AuthContext } from '../../providers/AuthProvider';
 
 const AddAToyForm = ({ handleAddAToy }) => {
+    const {user} = useContext(AuthContext);
     
     return (
         <Form onSubmit={handleAddAToy} style={{ maxWidth: "768px", minWidth: "350px", backgroundColor: "#e7e7e0"}} className='mx-auto px-5 py-5 rounded-3 addAToyForm'>
@@ -21,11 +23,11 @@ const AddAToyForm = ({ handleAddAToy }) => {
             <section className='d-flex flex-column flex-md-row gap-3'>
                 <Form.Group className="mb-3 w-50" controlId="formBasicEmail">
                     <Form.Label>Seller Name</Form.Label>
-                    <Form.Control type="text" name="name" placeholder="Your Name" />
+                    <Form.Control defaultValue={user?.displayName ? user.displayName : ""} type="text" name="name" placeholder="Your Name" />
                 </Form.Group>
                 <Form.Group className="mb-3 w-50" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" name='email' placeholder="Enter email" />
+                    <Form.Control defaultValue={user?.email ? user.email : ""} type="email" name='email' placeholder="Enter email" />
                 </Form.Group>
             </section>
             <section className='d-flex flex-column flex-md-row gap-3'>

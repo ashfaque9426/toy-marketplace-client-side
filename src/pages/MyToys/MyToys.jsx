@@ -7,6 +7,7 @@ import MyToysTableRow from '../../Components/MyToysTableRow/MyToysTableRow';
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Swal from 'sweetalert2';
+import './MyToys.css'
 
 const MyToys = () => {
     useTitle("My Toys");
@@ -106,7 +107,7 @@ const MyToys = () => {
                     <option value="descending">Descending by price</option>
                 </select>
             </section>
-            <section>
+            <section className='myToyTableContainer'>
                 <Table striped bordered hover responsive="sm">
                     <thead>
                         <tr>

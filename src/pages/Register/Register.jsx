@@ -5,6 +5,7 @@ import { AuthContext } from '../../providers/AuthProvider';
 import RegistrationForm from '../../Components/RegistrationForm/RegistrationForm';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import bgRegistration from '../../assets/background-images/loginBG.jpg'
 
 const Register = () => {
     useTitle('Register');
@@ -100,9 +101,9 @@ const Register = () => {
         }
     }
     return (
-        <main role='main'>
-            <h2 className='text-center mt-5'>Register Now</h2>
-            <section className='d-flex justify-content-center align-items-center'>
+        <main style={{ backgroundImage: `url(${bgRegistration})`}} role='main'>
+            <h2 className='text-center text-light pt-5'>Register Now</h2>
+            <section className='d-flex justify-content-center align-items-center pb-5'>
                 <RegistrationForm handleRegistration={handleRegistration} handleEmail={handleEmail} handlePassword={handlePassword} success={success} error={error} emailError={emailError} passwordError={passwordError} disableBtn={disableBtn} redirection={redirection} email={email} password={password}  />
             </section>
         </main>

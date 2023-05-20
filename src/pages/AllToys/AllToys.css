@@ -1,5 +1,9 @@
+.allToysMainContainer {
+    padding-bottom: 250px !important;
+}
+
 @media screen and (max-width: 576px) {
     .allToysMainContainer {
-        height: calc(100vh + 355vh) !important;
+        height: calc(100vh + 375vh) !important;
     }
 }

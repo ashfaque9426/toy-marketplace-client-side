@@ -57,7 +57,7 @@ const AddAToy = () => {
     return (
         <main className='addAToyMainContainer' role='main'>
             <h2 className='text-center my-5'>Add Your Toy</h2>
-            <section>
+            <section className='mb-5'>
                 <AddAToyForm handleAddAToy={handleAddAToy} />
             </section>
         </main>
