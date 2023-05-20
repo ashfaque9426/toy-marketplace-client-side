@@ -61,7 +61,7 @@ const Home = () => {
                     </TabPanel>
                 </Tabs>
             </section>
-            <section className='text-center'>
+            <section style={{marginBottom: "1000px"}} className='text-center'>
                 <h2 className='pt-5 mb-5'>Figure Gallery</h2>
                 <HomeGallery />
             </section>

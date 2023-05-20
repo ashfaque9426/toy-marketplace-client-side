@@ -13,10 +13,10 @@ const SingleToyDetail = () => {
         <main style={{height: "calc(100vh - 25vh)"}} role='main'>
             <h2 className='my-5 text-center'>Single Toy Details</h2>
             <article className='d-flex flex-column flex-md-row-reverse justify-content-center align-items-center px-3'>
-                <figure className='w-50 singleFigImg'>
+                <figure className='w-50 singleFigImg' data-aos="fade-left">
                     <img  className='w-100' src={imgUrl} alt="" />
                 </figure>
-                <section className='text-center pt-5 w-50 singleFigContainer'>
+                <section className='text-center pt-5 w-50 singleFigContainer' data-aos="fade-right">
                     <h4 className='fw-bold'>{toyName}</h4>
                     <p className='fs-5 fw-semibold mt-3'><span className='fw-bold'>Seller Name:</span> {sellerName}</p>
                     <p className='fs-5 fw-semibold'><span className="fw-bold">Seller Email:</span> {sellerEmail}</p>
