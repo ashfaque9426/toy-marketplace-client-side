@@ -9,7 +9,7 @@ import './Footer.css'
 const Footer = () => {
     return (
         <footer style={{ backgroundColor: "#e7e7e0"}}>
-            <section className='d-flex flex-column flex-md-row justify-content-md-between align-items-start pt-5 px-5 pb-4 gap-3'>
+            <section className='d-flex flex-column flex-md-row justify-content-md-around align-items-start pt-5 px-5 pb-4 gap-3'>
                 <div>
                     <h5>Shop</h5>
                     <section>

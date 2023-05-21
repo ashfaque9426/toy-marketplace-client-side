@@ -25,3 +25,5 @@
 - **This Site's authentication data are protected using enviroment variable system so do dotenv for the server side**
 
 - This site let you navigate through Action Figuares of different jaunras of video games.
+
+**Live-site-link: <https://toy-marketplace-client-side.web.app/>**
