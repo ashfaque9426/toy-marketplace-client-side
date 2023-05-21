@@ -6,6 +6,7 @@ import 'react-tabs/style/react-tabs.css';
 import FigureCardForHome from '../../Components/FigureCardForHome/FigureCardForHome';
 import './Home.css'
 import HomeGallery from '../../Components/HomeGallery/HomeGallery';
+import FiguramaMaintenanceSection from '../../Components/FiguramaMaintenanceSection/FiguramaMaintenanceSection';
 
 const Home = () => {
     useTitle("Home");
@@ -73,6 +74,10 @@ const Home = () => {
             <section className='text-center mb-5 myHomeGallery'>
                 <h2 className='pt-5 mb-5'>Figure Gallery</h2>
                 <HomeGallery />
+            </section>
+            <section>
+                <h2 className='pt-5 text-center careHeading'>Care and Maintenance</h2>
+                <FiguramaMaintenanceSection />
             </section>
         </main>
     );

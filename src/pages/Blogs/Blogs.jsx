@@ -9,7 +9,7 @@ const Blogs = () => {
         <main className='qaContainer d-flex justify-content-center align-items-center' style={{height: "calc(100vh - 20vh)"}} role='main'>
             <div>
                 <h2 className='my-5 text-center'>Blog About Q&A</h2>
-                <section className='mx-auto qaSection'>
+                <section className='mx-auto mb-5 qaSection'>
                     <div className="accordion" id="accordionExample">
                         <div className="accordion-item">
                             <h2 className="accordion-header">

@@ -5,7 +5,7 @@
 
 @media screen and (max-width: 576px) {
     .homeMainContainer {
-        height: calc(435vh + 275vh) !important;
+        height: calc(585vh + 480vh) !important;
     }
     .collectorsCornerContainer {
         padding-top: 15px !important;
@@ -28,5 +28,9 @@
     }
     .myHomeGallery h2 {
         padding-top: 15px !important;
+    }
+    .careHeading {
+        padding-top: 28px !important;
+        margin-bottom: -20px !important;
     }
 }
