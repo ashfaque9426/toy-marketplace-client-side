@@ -4,11 +4,12 @@ import { Button } from 'react-bootstrap';
 import { FaFacebookSquare, FaInstagram } from 'react-icons/fa';
 import { GrPinterest, GrYoutube } from 'react-icons/gr';
 import { TfiTwitter } from 'react-icons/tfi';
+import './Footer.css'
 
 const Footer = () => {
     return (
         <footer style={{ backgroundColor: "#e7e7e0"}}>
-            <section className='d-flex flex-column flex-md-row justify-content-md-between align-items-start pt-5 px-5 pb-4'>
+            <section className='d-flex flex-column flex-md-row justify-content-md-between align-items-start pt-5 px-5 pb-4 gap-3'>
                 <div>
                     <h5>Shop</h5>
                     <section>
@@ -59,7 +60,7 @@ const Footer = () => {
                     </section>
                 </div>
             </section>
-            <section className='d-flex flex-column flex-md-row justify-content-md-between align-items-center bg-dark text-light px-5 py-3'>
+            <section className='d-flex flex-column flex-md-row justify-content-md-between align-items-center bg-dark text-light px-5 py-3 footerSecondSection'>
                 <p>Terms of Use</p>
                 <p>Privaacy</p>
                 <p>@2023 Figurama, Inc</p>

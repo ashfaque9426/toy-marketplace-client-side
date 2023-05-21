@@ -28,11 +28,20 @@ const Home = () => {
 
     return (
         <main className='homeMainContainer' role='main'>
-            <h2 className='text-center mt-5 mb-3'>This Is Home</h2>
-            <section>
+            <section className='py-5 bg-dark text-light collectorsCornerContainer'>
+                <h2 className='text-center mt-5 mb-3 fs-4 mx-1'>Collector&apos;s Corner: Unleash the Power of Gaming Franchise Action Figures</h2>
+                <article>
+                    <p className='text-center w-50 mx-auto meaningFullText'>Welcome to our Collector&apos;s Corner, where you deep dive into the world of Gaming Franchise Action Figures and other related accessories! Here, you will explore the captivation realm of toy gaming toy action figures. that bring your favourite video game characters to life.</p>
+                    <p className='text-start w-50 mx-auto fw-semibold meaningFullText pt-3'>**Here One of Our User&apos;s Review video of <strong>Minecraft music box set</strong>, Which he has made by collecting accessories from this site.**</p>
+                    <div className='text-center pt-3 pb-5'>
+                        <iframe className='myIframe' width="620" height="350" src="https://www.youtube.com/embed/j_mOmQ4HSak" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                    </div>
+                </article>
+            </section>
+            <section className='pt-5 suggestedCategoryContainer'>
                 <h2 className='fs-3 fw-bold text-center mt-5 mb-3'>Suggested Categories</h2>
                 <Tabs className='mb-5 px-5 tabsContainerCustomClass'>
-                    <TabList onClick={handleSelectedTab}>
+                    <TabList className='text-center border pt-2 myTablist' onClick={handleSelectedTab}>
                         <Tab>Assassin&apos;s Creed</Tab>
                         <Tab>Batman</Tab>
                         <Tab>The Legend of Zelda</Tab>
@@ -61,7 +70,7 @@ const Home = () => {
                     </TabPanel>
                 </Tabs>
             </section>
-            <section className='text-center mb-5'>
+            <section className='text-center mb-5 myHomeGallery'>
                 <h2 className='pt-5 mb-5'>Figure Gallery</h2>
                 <HomeGallery />
             </section>

@@ -1,11 +1,32 @@
+.meaningFullText {
+    line-height: 2.9ch;
+    letter-spacing: 1px;
+}
+
 @media screen and (max-width: 576px) {
     .homeMainContainer {
-        height: calc(100vh + 533vh) !important;
+        height: calc(435vh + 275vh) !important;
+    }
+    .collectorsCornerContainer {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+    }
+    .meaningFullText {
+        width: 90% !important;
+    }
+    .myIframe {
+        width: 100% !important;
+    }
+    .suggestedCategoryContainer {
+        padding-top: 33px !important;
     }
     .tabsContainerCustomClass {
         padding-inline: 5px !important;
     }
     .myTabs {
         width: 100% !important;
+    }
+    .myHomeGallery h2 {
+        padding-top: 15px !important;
     }
 }
