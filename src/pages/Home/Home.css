@@ -4,9 +4,6 @@
 }
 
 @media screen and (max-width: 576px) {
-    .homeMainContainer {
-        height: calc(585vh + 480vh) !important;
-    }
     .collectorsCornerContainer {
         padding-top: 15px !important;
         padding-bottom: 15px !important;

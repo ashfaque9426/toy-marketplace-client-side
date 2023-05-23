@@ -2,10 +2,16 @@
     margin-right: 150px;
     margin-bottom: -75px;
 }
+.singleFigContainer {
+    height: calc(100vh - 25vh) !important;
+}
 
 @media screen and (max-width: 576px) {
-
-    main {
+    .singleToyHeading {
+        margin-top: 150px !important;
+        margin-bottom: 55px !important
+    }
+    .singleToyDetailMainContainer {
         height: calc(100vh + 20vh) !important;
     }
 
@@ -29,7 +35,7 @@
     }
 
     .singleFigContainer button {
-        margin-block: 10px;
+        margin-block: 20px;
     }
 
 }

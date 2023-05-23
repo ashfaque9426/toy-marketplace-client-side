@@ -10,8 +10,8 @@ const SingleToyDetail = () => {
     const singleActionFigure = useLoaderData();
     const { imgUrl, toyName, sellerName, sellerEmail, price, availableQuantity, rating, detailDescription } = singleActionFigure;
     return (
-        <main style={{height: "calc(100vh - 25vh)"}} role='main'>
-            <h2 className='my-5 text-center'>Single Toy Details</h2>
+        <main className='singleToyDetailMainContainer' role='main'>
+            <h2 className='my-5 text-center singleToyHeadi'>Single Toy Details</h2>
             <article className='d-flex flex-column flex-md-row-reverse justify-content-center align-items-center px-3'>
                 <figure className='w-50 singleFigImg' data-aos="fade-left">
                     <img  className='w-100' src={imgUrl} alt="" />

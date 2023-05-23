@@ -6,7 +6,7 @@ import './Blogs.css'
 const Blogs = () => {
     useTitle("Blog");
     return (
-        <main className='qaContainer d-flex justify-content-center align-items-center' style={{height: "calc(100vh - 20vh)"}} role='main'>
+        <main className='qaContainer d-flex justify-content-center align-items-center' role='main'>
             <div>
                 <h2 className='my-5 text-center'>Blog About Q&A</h2>
                 <section className='mx-auto mb-5 qaSection'>

@@ -1,3 +1,7 @@
+.qaContainer {
+    height: calc(100vh - 10vh) !important;
+}
+
 @media screen and (max-width: 576px) {
     .qaContainer {
         height: calc(100vh + 33vh) !important;
