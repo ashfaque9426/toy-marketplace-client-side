@@ -20,7 +20,7 @@
 
 - **This Project Takes advantage of React Routing to navigate to the different section of the page**
 
-- This site has protected route which only accessible if user is logged in and get some more information about speciq chef's recipes **(only available if logged in)**.
+- This site has protected route which only accessible if user is logged in and get some more information about speciq toy's details **(only available if logged in)**.
 
 - **This Site's authentication data are protected using enviroment variable system so do dotenv for the server side**
 
